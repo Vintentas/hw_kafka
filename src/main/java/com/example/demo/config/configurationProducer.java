@@ -21,14 +21,14 @@ public class configurationProducer {
     @Value(value = "${spring.kafka.bootstrap-servers}")
     private String address;
 
-    @Bean
-    public NewTopic topic() {
-        return TopicBuilder
-                .name(TOPIC_NAME)
-                .partitions(10)
-                .replicas(2)
-                .build();
-    }
+//    @Bean
+//    public NewTopic topic() {
+//        return TopicBuilder
+//                .name(TOPIC_NAME)
+//                .partitions(10)
+//                .replicas(2)
+//                .build();
+//    }
 
     @Bean
     public ProducerFactory<String, String> producerFactory() {

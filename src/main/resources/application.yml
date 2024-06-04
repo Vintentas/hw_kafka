@@ -1,6 +1,6 @@
-server:
-  port: 8081
-
 spring:
   kafka:
     bootstrap-servers: localhost:29092, localhost:9092, localhost:9999
+
+    consumer:
+      group-id: gr, gr2

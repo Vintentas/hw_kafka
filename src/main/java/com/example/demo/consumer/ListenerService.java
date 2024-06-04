@@ -8,7 +8,7 @@ public class ListenerService {
 
     public static final String TOPIC_NAME = "tpc1";
 
-  //  @KafkaListener(topics = TOPIC_NAME)
+    @KafkaListener(topics = TOPIC_NAME)
     public void listen(String message) {
         System.out.println("Get message:" + message);
     }

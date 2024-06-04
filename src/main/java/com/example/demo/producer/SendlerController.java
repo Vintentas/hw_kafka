@@ -18,7 +18,7 @@ public class SendlerController {
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void send() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10; i++) {
 
             String key = String.valueOf(i);
             String message = String.valueOf(Math.random() * 10000 + 1);

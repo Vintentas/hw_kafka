@@ -16,7 +16,7 @@ public class SendlerService {
     private final KafkaTemplate<String, String> kafkaTemplate;
 
     public void send(String key, String message) {
-        System.out.println("message send");
+        System.out.println("message send " + key + " " + message);
         kafkaTemplate.send(TOPIC_NAME, key, message);
     }
 
